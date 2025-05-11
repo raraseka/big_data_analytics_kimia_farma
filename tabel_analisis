@@ -1,0 +1,29 @@
+CREATE TABLE rakamin-kf-analytics-459312.kimia_farma.tabel_analisa AS 
+WITH base AS (
+SELECT 
+  transaction_id, date, ft.branch_id, kc.branch_name, kota, provinsi, kc.rating, customer_name, ft.      
+  product_id, product_name, p.price AS actual_price, discount_percentage, 
+  CASE 
+    WHEN p.price <= 50000 THEN 0.10 
+    WHEN p.price <= 100000 THEN 0.15 
+    WHEN p.price <= 300000 THEN 0.20 
+    WHEN p.price <= 500000 THEN 0.25
+    ELSE 0.30
+  END AS percentase_gross_laba,
+
+  p.price *(1-discount_percentage / 100) AS nett_sales,
+
+
+  ft.rating AS rating_transaksi
+
+FROM `rakamin-kf-analytics-459312.kimia_farma.final_transaction` AS ft
+JOIN `rakamin-kf-analytics-459312.kimia_farma.product` AS p
+  ON ft.product_id = p.product_id
+JOIN `rakamin-kf-analytics-459312.kimia_farma.kantor_cabang` AS kc
+  ON ft.branch_id = kc.branch_id
+)
+
+
+SELECT *,
+    (actual_price * (1 - discount_percentage / 100)) * percentase_gross_laba AS nett_profit
+  FROM base;
