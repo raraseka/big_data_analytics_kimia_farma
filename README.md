@@ -20,15 +20,15 @@ transaksi,
 ● product_name : nama obat,
 ● actual_price : harga obat,
 ● discount_percentage : Persentase diskon yang diberikan
-pada obat,
+  pada obat,
 ● persentase_gross_laba : Persentase laba yang seharusnya
-diterima dari obat dengan ketentuan berikut:
-■ Harga <= Rp 50.000 -> laba 10%
-■ Harga > Rp 50.000 - 100.000 -> laba 15%
-■ Harga > Rp 100.000 - 300.000 -> laba 20%
-■ Harga > Rp 300.000 - 500.000 -> laba 25%
-■ Harga > Rp 500.000 -> laba 30%,
+  diterima dari obat dengan ketentuan berikut:
+  Harga <= Rp 50.000 -> laba 10%
+  Harga > Rp 50.000 - 100.000 -> laba 15%
+  Harga > Rp 100.000 - 300.000 -> laba 20%
+  Harga > Rp 300.000 - 500.000 -> laba 25%
+  Harga > Rp 500.000 -> laba 30%,
 ● nett_sales : harga setelah diskon,
 ● nett_profit : keuntungan yang diperoleh Kimia Farma,
 ● rating_transaksi : penilaian konsumen terhadap transaksi
-yang dilakukan.
+  yang dilakukan.
