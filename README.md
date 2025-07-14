@@ -4,6 +4,7 @@ Project ini merupakan tugas akhir dari magang virtual yang diselenggarakan oleh 
 ### Tools:
 - BigQuery
 - Looker
+------
 Pada proyek ini, anda juga diminta untuk membuat tabel analisa
 berdasarkan hasil aggregasi dari ke-empat tabel yang sudah
 diimport sebelumnya. Berikut ini adalah kolom-kolom yang
