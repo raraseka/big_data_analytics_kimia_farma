@@ -1,7 +1,9 @@
 # Big Data Analytics Kimia Farma 
 ## Project Based Internship Kimia Farma x Rakamin Academy
-
-Buat tabel analisa
+Project ini merupakan tugas akhir dari magang virtual yang diselenggarakan oleh Rakamin Academy
+###Tools:
+- BigQuery
+- Looker
 Pada proyek ini, anda juga diminta untuk membuat tabel analisa
 berdasarkan hasil aggregasi dari ke-empat tabel yang sudah
 diimport sebelumnya. Berikut ini adalah kolom-kolom yang
