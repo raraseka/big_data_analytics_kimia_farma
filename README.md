@@ -5,10 +5,10 @@ Project ini merupakan tugas akhir dari magang virtual yang diselenggarakan oleh 
 - BigQuery
 - Looker
 ------
-Pada proyek ini, anda juga diminta untuk membuat tabel analisa
-berdasarkan hasil aggregasi dari ke-empat tabel yang sudah
-diimport sebelumnya. Berikut ini adalah kolom-kolom yang
-mandatory pada tabel tersebut:
+Pada projek ini saya melakukan analisis data transaksi kimia faram dengan empat tabel yang sudah disediakan. 
+1. Import keempat data ke BigQuery
+2. Kita juga diminta untuk membuat tabel analisa berdasarkan hasil aggregasi dari ke-empat tabel yang sudah diimport sebelumnya. Berikut ini adalah kolom-kolom yang
+   mandatory pada tabel tersebut:
 - transaction_id : kode id transaksi,d
 - date : tanggal transaksi dilakukan,
 - branch_id : kode id cabang Kimia Farma,
@@ -30,4 +30,6 @@ mandatory pada tabel tersebut:
   Harga > Rp 500.000 -> laba 30%,
 - nett_sales : harga setelah diskon,
 - nett_profit : keuntungan yang diperoleh Kimia Farma,
-- rating_transaksi : penilaian konsumen terhadap transaksi yang dilakukan.
+- rating_transaksi : penilaian konsumen terhadap transaksi yang dilakukan.\
+3. Analisis Data
+4. Visualisasi Data dengan menggunakan looker studio
